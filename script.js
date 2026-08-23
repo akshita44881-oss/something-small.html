@@ -44,7 +44,7 @@ document
 
 
 /* =========================================
-   CANDLE
+   CANDLE → SONG + ENVELOPE
 ========================================= */
 
 document
@@ -64,20 +64,25 @@ document
 
         hint.textContent = "wish made ✦";
 
+
+        /* Start the song automatically */
+
+        if (birthdaySong) {
+            birthdaySong.currentTime = 0;
+
+            birthdaySong.play().catch(function(error) {
+                console.log("Music could not start automatically:", error);
+            });
+        }
+
+
+        /* Give the candle animation a moment,
+           then reveal the envelope */
+
         setTimeout(function() {
             showScreen(4);
         }, 1500);
-    });
 
-
-/* =========================================
-   SCREEN 4 → SCREEN 5
-========================================= */
-
-document
-    .getElementById("letterButton")
-    .addEventListener("click", function() {
-        showScreen(5);
     });
 
 
@@ -103,9 +108,11 @@ document
 
         hint.textContent = "Your letter is waiting for you ♡";
 
+
         setTimeout(function() {
             button.classList.remove("hidden");
         }, 800);
+
     });
 
 
@@ -116,7 +123,7 @@ document
 document
     .getElementById("openLetterButton")
     .addEventListener("click", function() {
-        showScreen(6);
+        showScreen(5);
     });
 
 
@@ -127,5 +134,5 @@ document
 document
     .getElementById("finishLetter")
     .addEventListener("click", function() {
-        showScreen(7);
+        showScreen(6);
     });
