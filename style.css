@@ -14,7 +14,7 @@ body {
     overflow: hidden;
     background: #07071b;
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 
@@ -180,7 +180,9 @@ body {
 .script-text {
     color: #ffd1e4;
 
-    font-family: "Great Vibes", cursive;
+    font-family: "Georgia", serif;
+
+    font-style: italic;
 
     font-size: clamp(1.8rem, 4vw, 3rem);
 }
@@ -215,7 +217,7 @@ body {
 
     color: #ffb4d3;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: clamp(5rem, 14vw, 9rem);
 
@@ -238,7 +240,7 @@ body {
 
     color: #ffd4e5;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: 1.4rem;
 
@@ -252,7 +254,7 @@ body {
 
     color: #eadce4;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: clamp(1.15rem, 3vw, 1.6rem);
 }
@@ -290,7 +292,7 @@ body {
             #eb6fa8
         );
 
-    font-family: "Montserrat", sans-serif;
+    font-family: Arial, sans-serif;
 
     font-size: 0.76rem;
     font-weight: 600;
@@ -344,7 +346,7 @@ body {
 
     color: #fff0f8;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: clamp(4rem, 12vw, 8.5rem);
 
@@ -363,7 +365,9 @@ body {
 
     color: #ffc3dc;
 
-    font-family: "Great Vibes", cursive;
+    font-family: Georgia, serif;
+
+    font-style: italic;
 
     font-size: clamp(2rem, 5vw, 3.5rem);
 }
@@ -604,116 +608,6 @@ body {
 
 
 /* =========================================
-   MUSIC
-========================================= */
-
-.music-symbol {
-    color: #ff9fc6;
-
-    font-size: 3.5rem;
-
-    text-shadow:
-        0 0 20px #ff73b2;
-
-    animation:
-        musicBounce
-        2s
-        ease-in-out
-        infinite;
-}
-
-@keyframes musicBounce {
-    50% {
-        transform:
-            translateY(-10px)
-            rotate(5deg);
-    }
-}
-
-.music-card {
-    display: flex;
-
-    align-items: center;
-
-    width: min(380px, 85vw);
-
-    margin: 30px auto 0;
-
-    padding: 15px 18px;
-
-    border:
-        1px solid
-        rgba(255, 180, 215, 0.18);
-
-    border-radius: 20px;
-
-    background:
-        rgba(255, 255, 255, 0.06);
-
-    backdrop-filter: blur(10px);
-}
-
-.music-disc {
-    display: grid;
-
-    place-items: center;
-
-    width: 52px;
-    height: 52px;
-
-    flex-shrink: 0;
-
-    border-radius: 50%;
-
-    color: #ffffff;
-
-    background:
-        linear-gradient(
-            135deg,
-            #ff9bc4,
-            #db6195
-        );
-
-    box-shadow:
-        0 0 20px rgba(255, 100, 170, 0.3);
-
-    animation:
-        discSpin 4s
-        linear infinite;
-}
-
-@keyframes discSpin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.music-info {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 4px;
-
-    margin-left: 15px;
-
-    text-align: left;
-}
-
-.music-info span {
-    color: #f4e4ed;
-
-    font-size: 0.82rem;
-}
-
-.music-info small {
-    color: #cdbac8;
-
-    font-size: 0.68rem;
-}
-
-
-/* =========================================
    ENVELOPE
 ========================================= */
 
@@ -906,7 +800,9 @@ body {
 
     text-align: center;
 
-    font-family: "Great Vibes", cursive;
+    font-family: Georgia, serif;
+
+    font-style: italic;
 
     font-size: clamp(2.2rem, 6vw, 3.5rem);
 
@@ -914,7 +810,7 @@ body {
 }
 
 .letter-content {
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: clamp(1.05rem, 2.2vw, 1.25rem);
 
@@ -988,7 +884,9 @@ body {
 
     color: #ffe6f1;
 
-    font-family: "Great Vibes", cursive;
+    font-family: Georgia, serif;
+
+    font-style: italic;
 
     font-size: clamp(3rem, 8vw, 5.5rem);
 
@@ -1003,7 +901,7 @@ body {
 
     color: #ead9e4;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Georgia, serif;
 
     font-size: 1.3rem;
 }
